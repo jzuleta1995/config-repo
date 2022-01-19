@@ -38,7 +38,7 @@ spring:
          predicates: 
           - Path=/user/**
          filters:
-          - RemoveRequestHeader=Cookie
+          - AuthFilter
        - id: car-service
          uri: lb://car-service
          predicates: 
