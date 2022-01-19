@@ -18,13 +18,13 @@ spring:
             userinfo-uri: http://localhost:8180/auth/realms/auth-realm/protocol/openid-connect/userinfo
             user-name-attribute: preferred_username
             token-uri: http://localhost:8180/auth/realms/auth-realm/protocol/openid-connect/token
-          registration:
-            vehicles-client: 
-              provider: keycloak
-              client-id: vehicles-client
-              client-secret: e3m8A5m1X93m1j502IH4SUCuJfr1Oh0e
-              authorization-grant-type: authorization_code
-              redirect-uri: "{baseUrl}/login/oauth2/code/vehicles-client"
+        registration:
+          vehicles-client: 
+            provider: keycloak
+            client-id: vehicles-client
+            client-secret: e3m8A5m1X93m1j502IH4SUCuJfr1Oh0e
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/vehicles-client"
   cloud:
     gateway:
       default-filters:
